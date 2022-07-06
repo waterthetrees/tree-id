@@ -1,0 +1,26 @@
+{
+  "name": "@waterthetrees/tree-id",
+  "version": "1.0.0",
+  "description": "Generate a unique tree id based on properties of the tree (e.g. common and scientific name, lat/lng coordinates).",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waterthetrees/tree-id.git"
+  },
+  "author": "Team 'Water the Trees' (waterthetrees.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/waterthetrees/tree-id/issues"
+  },
+  "homepage": "https://github.com/waterthetrees/tree-id#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}
