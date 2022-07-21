@@ -6,7 +6,7 @@ Generate a unique tree id based on properties of the tree (e.g. common and scien
 Install this library as a dependency in your project:
 
 ```shell
-npm install @waterthetrees/tree-id
+npm install --save @waterthetrees/tree-id
 ```
 
 Import and use the module:
