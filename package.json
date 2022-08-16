@@ -1,6 +1,6 @@
 {
   "name": "@waterthetrees/tree-id",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Generate a unique tree id based on properties of the tree (e.g. common and scientific name, lat/lng coordinates).",
   "main": "index.js",
   "type": "module",
