@@ -1,7 +1,7 @@
 export function createIdForTree(data) {
-  const { lng, lat, common, species, sourceId } = formatStrings(data);
+  const { lng, lat, species, sourceId } = formatStrings(data);
   const hashed = geohashToInt(lat, lng, 52);
-  const idString = `${sourceId}${common}${species}-${hashed}`;
+  const idString = `${sourceId}${species}-${hashed}`;
   return Math.abs(cyrb53(idString));
 }
 
@@ -11,7 +11,6 @@ function formatStrings(d) {
   const species = d.species || d.scientific || '';
   return {
     sourceId,
-    common: d.common ? `-${d.common.toLowerCase()}` : '',
     species: species ? `-${species.toLowerCase()}` : '',
     lat: truncateTo(d.lat, 8),
     lng: truncateTo(d.lng, 8),
