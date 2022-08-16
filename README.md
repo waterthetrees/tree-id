@@ -1,5 +1,5 @@
 # tree-id
-Generate a unique tree id based on properties of the tree (e.g. common and scientific name, lat/lng coordinates).
+Generate a unique tree id based on properties of the tree (e.g. sourceId or city, species or scientific name, lat/lng coordinates).
 
 ## Usage:
 
@@ -15,11 +15,21 @@ Import and use the module:
 import { createIdForTree } from '@waterthetrees/tree-id';
 
 const treeId = createIdForTree({
-  id: 125,
-  common: 'Crape Myrtle',
+  species: 'Lagerstromia Indica',
+  city: 'san_francisco',
+  lat: 37.713225870641935,
+  lng: -122.45009922742373,
+});
+
+console.log(treeId);
+```
+
+```js
+import { createIdForTree } from '@waterthetrees/tree-id';
+
+const treeId = createIdForTree({
   scientific: 'Lagerstromia Indica',
-  city: 'San Francisco',
-  datePlanted: '2022-01-28T11:41:03.818Z',
+  sourceId: 'san_francisco',
   lat: 37.713225870641935,
   lng: -122.45009922742373,
 });
